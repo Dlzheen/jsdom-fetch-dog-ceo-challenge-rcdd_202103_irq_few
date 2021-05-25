@@ -17,9 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
    
   fetch(breedUrl).then(result => {return result.json()})
    .then(json =>{
-      for(let i=0;i<json.message.length;i++){
-        console.log(json.message[0]);     
-      }
+      // for(let i=0;i<json.message.length;i++){
+      //   console.log(json.message[0]);     
+      // }
    
      
    }); 
