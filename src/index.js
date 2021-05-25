@@ -25,7 +25,17 @@ window.addEventListener('DOMContentLoaded', () => {
         })
         let breedList = document.querySelector("#dog-breeds");
         breedList.append(breed);
-            
+        
+        
+        let selector=document.querySelector("#breed-dropdown");
+        selector.addEventListener("change",function(){
+          for(let i=0;i<json.message.length;i++){
+        let breed = document.createElement("li");
+        breed.innerHTML = json.message[i];
+        breed.addEventListener("click",()=>{
+          breed.style.color = "blue";
+        })
+        });
       }
    
     
