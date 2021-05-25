@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   fetch(breedUrl).then(result => {return result.json()})
    .then(json =>{
       for(let i=0;i<json.message.length;i++){
-        console.log(json.message[i]);
+        
         let breed = document.createElement("li");
         breed.innerHTML = json.message[i];
         breed.addEventListener("click",()=>{
