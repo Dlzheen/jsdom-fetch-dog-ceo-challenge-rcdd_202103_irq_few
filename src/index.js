@@ -18,10 +18,13 @@ window.addEventListener('DOMContentLoaded', () => {
   fetch(breedUrl).then(result => {return result.json()})
    .then(json =>{
       for(let i=0;i<json.message.length;i++){
+        let breed = document.createElement("li");
+        breed.innerHTML = json.message[i];
+        let breedList = document.querySelector("");
         console.log(json.message[i]);     
       }
    
-     console.log(json.message[0]);
+    
    }); 
 
 });
