@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
         let breed = document.createElement("li");
         breed.innerHTML = json.message[i];
         breed.addEventListener("click",()=>{
-          breed.style.color = "red";
+          breed.style.color = "blue";
         })
         let breedList = document.querySelector("#dog-breeds");
         breedList.append(breed);
