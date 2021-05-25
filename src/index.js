@@ -36,6 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
            }else{
              breed.style.display = "none";
            }
+          }
         
         });
       }
