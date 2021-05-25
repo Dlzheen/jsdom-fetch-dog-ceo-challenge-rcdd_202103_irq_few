@@ -20,7 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
       for(let i=0;i<json.message.length;i++){
         let breed = document.createElement("li");
         breed.innerHTML = json.message[i];
-        let breedList = document.querySelector("");
+        let breedList = document.querySelector("#dog-breeds");
+        breedList.append(breed);
         console.log(json.message[i]);     
       }
    
