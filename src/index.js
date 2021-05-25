@@ -33,12 +33,13 @@ window.addEventListener('DOMContentLoaded', () => {
           for(let i=0;i<json.message.length;i++){
            
            if(breed.innerHTML.startsWith(selector.value) ){
-             breed.style.color = "red";
+             breed.style.display = "block";
            }else{
              breed.style.display = "none";
            }
-          }
         
+          }
+          
         });
       }
    
