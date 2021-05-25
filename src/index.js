@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
       //   console.log(json.message[0]);     
       // }
    
-     
+     console.log(json.message[0]);
    }); 
 
 });
