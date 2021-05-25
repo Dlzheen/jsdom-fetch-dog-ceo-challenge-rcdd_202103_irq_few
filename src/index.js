@@ -31,8 +31,10 @@ window.addEventListener('DOMContentLoaded', () => {
         selector.addEventListener("change",function(){
           for(let i=0;i<json.message.length;i++){
            
-           if(breed.innerHTML ){
-             
+           if(breed.innerHTML.startsWith(selector.value) ){
+             breed.style.display = "inline";
+           }else{
+             breed.style.display = "none";
            }
         
         });
