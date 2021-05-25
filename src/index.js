@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
         breed.innerHTML = json.message[i];
         let breedList = document.querySelector("#dog-breeds");
         breedList.append(breed);
-        console.log(json.message[i]);     
+            
       }
    
     
